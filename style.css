@@ -1,7 +1,13 @@
 #container {
+    width: 90vw;
+    height: 90vh;
     display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    font-size: 0;
 }
 
 #container div {
     border-style: dotted;
+    font-size: 1rem;
 }
