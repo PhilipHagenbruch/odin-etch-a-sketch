@@ -7,7 +7,7 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    
+
     <div id="container"></div>
 
     <script>
@@ -18,9 +18,15 @@
     for (let i = 0; i < elementCount; i++) {
         const element = document.createElement("div");
         element.innerText = i;
+        element.onmouseover = (event) => {
+            event.target.style['background-color']
+                = 'rgb(' + Math.random() * 255 + ','
+                     + Math.random() * 255 + ','
+                     + Math.random() * 255 + ')';
+        }
         container.appendChild(element);
-    }    
-    
+    }
+
     </script>
 
 </body>
