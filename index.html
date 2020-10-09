@@ -7,5 +7,20 @@
 </head>
 <body>
     
+    <div id="container"></div>
+
+    <script>
+
+    const elementCount = 16*16;
+    const container = document.querySelector("#container");
+
+    for (let i = 0; i < elementCount; i++) {
+        const element = document.createElement("div");
+        element.innerText = i;
+        container.appendChild(element);
+    }    
+    
+    </script>
+
 </body>
 </html>
